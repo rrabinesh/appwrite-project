@@ -33,11 +33,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
  
-def install_requirements():
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-
-# Install the requirements
-install_requirements()
 
 class URLData(BaseModel):
     original_url: str
